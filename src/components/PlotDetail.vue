@@ -20,7 +20,6 @@ const isAvailable = computed(() => plot.value?.available)
   <div class="min-h-screen flex flex-col bg-white">
     <Navbar/>
     <PlotHeader/>
-
     <main class="flex-1 max-w-5xl mx-auto pt-28 pb-16 px-4 -mt-23">
       <!-- breadcrumb kecil -->
         <nav class="text-xs text-slate-500 mb-6">
@@ -85,7 +84,6 @@ const isAvailable = computed(() => plot.value?.available)
         </article>
       </section>
     </main>
-
-    <Footer />
+    <Footer/>
   </div>
 </template>
