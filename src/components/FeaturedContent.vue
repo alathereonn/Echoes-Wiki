@@ -1,3 +1,13 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+
+// class dasar untuk semua card featured
+const baseCardClass =
+  'block cursor-pointer rounded-3xl bg-pink-500 text-white ' +
+  'shadow-md shadow-pink-300/60 px-6 py-8 ' +
+  'transform transition hover:-translate-y-1 hover:shadow-xl hover:bg-gray-900'
+</script>
+
 <template>
   <div class="bg-white py-32">
     <div class="mx-auto max-w-5xl px-6">
@@ -6,7 +16,8 @@
       </h2>
 
       <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <div class="rounded-3xl bg-pink-500 text-white shadow-md shadow-pink-300/60 px-6 py-8 min-h-48">
+        <!-- CARD 1: Character Database -->
+        <RouterLink :to="{ name: 'CharactersPage' }" :class="baseCardClass">
           <div class="flex items-start gap-3">
             <span
               class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-pink-600 text-lg"
@@ -22,9 +33,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </RouterLink>
 
-        <div class="rounded-3xl bg-pink-500 text-white shadow-md shadow-pink-300/60 px-6 py-5">
+        <!-- CARD 2: Plot and Stories → /plots -->
+        <RouterLink :to="{ name: 'PlotPage' }" :class="baseCardClass">
           <div class="flex items-start gap-3">
             <span
               class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-pink-600 text-lg"
@@ -40,9 +52,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </RouterLink>
 
-        <div class="rounded-3xl bg-pink-500 text-white shadow-md shadow-pink-300/60 px-6 py-5">
+        <!-- CARD 3: Gameplay (sementara belum ada route, boleh '#' dulu) -->
+        <RouterLink :to="{ name: 'GameplayPage' }" :class="baseCardClass">
           <div class="flex items-start gap-3">
             <span
               class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-pink-600 text-lg"
@@ -58,7 +71,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </RouterLink>
       </div>
     </div>
   </div>

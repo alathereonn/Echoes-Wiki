@@ -1,11 +1,12 @@
 <template>
     <section class="bg-gray-100">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-        <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-extrabold text-pink-500">Visit Our Location</h2>
-            <p class="mt-4 text-lg text-gray-500">Meet the creator of ECHOES: The Undying Follower, share your suggestions!</p>
-        </div>
-        <div class="mt-16 lg:mt-20">
+        <div class="mt-16 lg:-mt-15">
+            <nav class="text-xs text-slate-500 mb-6">
+                <RouterLink to="/" class="hover:text-pink-500">Home</RouterLink>
+                <span class="mx-1">&gt;</span>
+                <span class="text-pink-500 font-semibold">Contact</span>
+            </nav>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="rounded-lg overflow-hidden">
                     <iframe

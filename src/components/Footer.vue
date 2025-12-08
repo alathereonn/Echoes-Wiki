@@ -20,7 +20,7 @@
                         <RouterLink to="/" class="hover:text-pink-500">Home</RouterLink>
                       </li>
                       <li>
-                          <RouterLink to="#" class="hover:text-pink-500">Plots</RouterLink>
+                          <RouterLink to="/plots" class="hover:text-pink-500">Plots</RouterLink>
                       </li>
                   </ul>
               </div>
@@ -28,10 +28,10 @@
                   <h2 class="mb-6 text-sm font-semibold text-white text-heading uppercase"></h2>
                   <ul class="text-body text-white font-medium">
                       <li class="mb-4">
-                          <RouterLink to="#" class="hover:text-pink-500">Characters</RouterLink>
+                          <RouterLink to="/characters" class="hover:text-pink-500">Characters</RouterLink>
                       </li>
                       <li>
-                          <RouterLink to="#" class="hover:text-pink-500">Gameplay</RouterLink>
+                          <RouterLink to="/gameplay" class="hover:text-pink-500">Gameplay</RouterLink>
                       </li>
                   </ul>
               </div>
@@ -39,7 +39,7 @@
                   <h2 class="mb-6 text-sm font-semibold text-white text-heading uppercase"></h2>
                   <ul class="text-body text-white font-medium">
                       <li class="mb-4">
-                          <RouterLink to="#" class="hover:text-pink-500">About</RouterLink>
+                          <RouterLink to="/about" class="hover:text-pink-500">About</RouterLink>
                       </li>
                       <li>
                           <RouterLink to="/contact" class="hover:text-pink-500">Contact</RouterLink>
