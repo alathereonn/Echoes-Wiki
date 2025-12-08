@@ -69,7 +69,7 @@ const isAvailable = computed(() => plot.value?.available)
       >
         <!-- breadcrumb -->
         <p class="text-xs text-gray-400 mb-2">
-          Home &gt; Plot &gt; <span class="text-pink-400">{{ plot.label }}</span>
+          Home &gt; Plots &gt; <span class="text-pink-400">{{ plot.label }}</span>
         </p>
 
         <h1 class="text-2xl md:text-3xl font-bold mb-1">
