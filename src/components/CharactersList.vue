@@ -64,7 +64,7 @@
         <img
           :src="char.image"
           :alt="char.name"
-          class="w-full aspect-[4/5] object-cover rounded-lg mb-3"
+          class="w-full aspect-[5/5] object-cover rounded-lg mb-3"
         />
 
         <h2 class="text-xl font-semibold text-white">
